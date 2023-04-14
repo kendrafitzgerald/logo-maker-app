@@ -1,6 +1,13 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 
+const shapeJS = require('./lib/shapes')
+const Shapes = shapeJS.Shapes;
+const Circle = shapeJS.Circle;
+const Triangle = shapeJS.Triangle;
+const Square= shapeJS.Square;
+
+
 const questions  =
 inquirer
 .prompt ([
