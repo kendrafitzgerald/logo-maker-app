@@ -1,7 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+const MaxLengthInputPrompt = require("inquirer-maxlength-input-prompt");;
+inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
 
-const shapeJS = require('./lib/shapes')
+
+const shapeJS = require('./lib/shapes');
 const Shapes = shapeJS.Shapes;
 const Circle = shapeJS.Circle;
 const Triangle = shapeJS.Triangle;
@@ -12,9 +15,10 @@ const questions  =
 inquirer
 .prompt ([
     {
-        type: 'input',
+        type: 'maxlength-input',
         message: 'Start creating your SVG logo! Please enter your text, only 3 characters are permitted.',
-        name: 'text'
+        name: 'text',
+        maxLength: 3,
     },
     {
         type: 'input',
