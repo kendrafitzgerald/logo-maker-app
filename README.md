@@ -2,64 +2,29 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+My motivation behind this project was to formulate a simple way for users to create an SVG logo for a brand or website. I built this project to allow individuals to utilize their command line in order to make SVG logos that are either a circle, triangle, or square with three characters displayed. Moreover, I built this project to allow the user to input the text color and shape color they desire their logo to be. This project provides a solution for anyone who wants to create an SVG logo by giving the user a simple to use command line application that creates a logo to their liking upon their requests. I learned how to formulate SVG files, how to use class functions, and how to create a testing suite for my functions in this project.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install this app, add the repo to your terminal and then type in npm run test to run the tests on each shape class. Then run node index.js. Usage will be described below.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use this project, open index.js in your terminal and then run node index.js. The first prompt will ask you to input up to three characters for your logo text. The next prompt will ask you what color you would like the text to be, and you can input either a recognized CSS color name or a hexidecimal value. You will then be asked to choose a shape and can use your arrow keys to navigate through the list of shapes provided. Lastly, you will be prompted to enter another CSS color name or hexidecimal value into the terminal which will be the color of the shape in the logo. Once doing this, you will see that a logo.svg file has been created with the correct code inside. You can open this file in your browser by going into a browser tab, clicking "Open File" and choosing the rendered logo.svg file. The below video walks you through these steps.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+You can also run tests as seen in the video, which will be explained in the "Tests" section of this ReadMe.
 
 (SVG Logo Maker App Walkthrough)[https://drive.google.com/file/d/1txD3VGXJOVofDDc_r3vIBsQdLbMFLZRU/view]
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+I used the npm inquirer@8.2.4 to prompt users with questions. Jest was used to run tests for the application. Screencastify was used to create the walkthrough video.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+If you would like to contribute to this project, please reach out to me via email at kendrajfitzgerald@gmail.com. I would love any collaboration on how to improve this app!
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+To run the tests written for this application, simply open the project in your terminal and write "npm run test". You will see 5 tests being run and passed which correlate to the Shapes, Circle, Triangle, and Square classes in shapes.js. 
